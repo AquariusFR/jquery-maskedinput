@@ -3,7 +3,6 @@
 // Ensure any request for this webjar brings in dependencies. 
 //
 requirejs.config({
-    shim: {
-        'jquery-maskedinput': [ 'webjars!jquery.js' ]
-    }
+    paths: { "jquery-maskedinput": webjars.path("jquery-maskedinput", "jquery.maskedinput") },
+    shim: { "jquery-maskedinput": [ "jquery" ] }
 });
